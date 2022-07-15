@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  background-image: url(../../img/bg.gif);
+  background-color: #0E2431;
+}
+
+h1,h2,p{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+canvas.particles-js-canvas-el{
+  position: absolute;
+  height: 100% !important;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -10000;
+  margin: 0px;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: cornflowerblue;
+  background-color: #0E2431;
+  font-family: 'poppins', cursive;
+}
+     
+hr {
+    height: 1px;
+    background-color: rgb(67, 66, 92);
+    border: none;
+}
+
+main.grid {
+  display: grid;
+  grid-gap: 20px;
+  margin: 30px 10px;
+  align-items: stretch;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+main.grid img {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+}
