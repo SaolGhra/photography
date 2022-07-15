@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!-- =====Styles and Contextual=====-->
   <link rel="stylesheet" href="./script/style.css" type="text/css">
+  <link rel="stylesheet" href="./script/drop.css" type="text/css">
   <link rel="icon" href="./icon/icon.jpg" type="image/x-icon">
   <link rel="shortcut icon" href="./icon/icon.jpg" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +17,7 @@
   <meta charset="UTF-8">
   <title>Photography | Spencer</title>
 </head>
-<!--
-<body>
-  <header>
-    <h2>Spencers Photography</h2>
-    <li><a href="https://saolghra.github.io"> Home </a></li>
-    <li><a href="https://saolghra.github.io/portfolio/homepage"> Portfolio </a></li>
-    <li><a href="https://saolghra.github.io/blog/"> Blog </a></li>
-    <li><a href="https://saolghra.github.io/about/homepage"> About </a></li>
-    <li><a href="https://saolghra.github.io/photography/"> Gallery </a></li>
-  </header>
-  <hr>
--->
+
         <!--===== HEADER =====-->
         <header class="l-header">
           <nav class="nav bd-grid">
@@ -41,7 +31,7 @@
                       <li class="nav__item"><a href="https://saolghra.github.io/about/homepage" class="nav__link">About</a></li>
                       <li class="nav__item"><a href="https://saolghra.github.io/portfolio/homepage" class="nav__link">Portfolio</a></li>
                       <li class="nav__item"><a href="https://saolghra.github.io/blog" class="nav__link">Blog</a></li>
-                      <li class="nav__item"><a href="https://saolghra.github.io/photography/" class="nav__link active">Gallary</a></li>
+                      <li class="nav__item"><a href="https://saolghra.github.io/photography/" class="nav__link active">Gallery</a></li>
                   </ul>
               </div>
 
@@ -49,13 +39,20 @@
                   <i class='bx bx-menu'></i>
               </div>
           </nav>
+          <div class="dropdown">
+            <li class="dropbtn" onclick="myFunction()">Gallery Pages
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="./index">Day to Day life</a>
+              <a href="./selfies">Selfies</a>
+              <a href="./animals">Animals</a>
+            </div>
       </header>
 <br><br>
   <main class="grid">
-    <li><img src="img/img3.jpg" />Guitar photoshoot 1</li>
-    <li><img src="img/img4.jpg" />Guitar photoshoot 2</li>
-    <li><img src="img/img5.jpg" />Doggy Chillin 1</li>
-    <li><img src="img/img6.jpg" />Doggy chillin 2</li>
+    <li><img src="img/d2d/img3.jpg" />Guitar photoshoot 1</li>
+    <li><img src="img/d2d/img4.jpg" />Guitar photoshoot 2</li>
   </main>
 
         <!--===== FOOTER =====-->
@@ -67,8 +64,32 @@
               <a href="https://youtube.com/channel/UCB08sMsshzAPcY7aVr3ww3g" class="footer__icon"><i class='bx bxl-youtube' ></i></a>
           </div>
           <p>&#169; 2022 copyright all right reserved</p>
-      </footer>
+      </footer> 
 
+      <!--========Dropdown Menu Javascript========-->      
+
+      <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+    
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
 

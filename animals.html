@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--  <meta http-equiv="refresh" content="7; url='https://saolghra.github.io/403'" /> -->
+  <!-- =====BOX ICONS===== -->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- =====Styles and Contextual=====-->
+  <link rel="stylesheet" href="./script/style.css" type="text/css">
+  <link rel="stylesheet" href="./script/drop.css" type="text/css">
+  <link rel="icon" href="./icon/icon.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="./icon/icon.jpg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <title>Animals | Spencer</title>
+</head>
+
+        <!--===== HEADER =====-->
+        <header class="l-header">
+          <nav class="nav bd-grid">
+              <div>
+                  <a href="https://saolghra.github.io" class="nav__logo">Spencer</a>
+              </div>
+
+              <div class="nav__menu" id="nav-menu">
+                  <ul class="nav__list">
+                      <li class="nav__item"><a href="https://saolghra.github.io" class="nav__link">Home</a></li>
+                      <li class="nav__item"><a href="https://saolghra.github.io/about/homepage" class="nav__link">About</a></li>
+                      <li class="nav__item"><a href="https://saolghra.github.io/portfolio/homepage" class="nav__link">Portfolio</a></li>
+                      <li class="nav__item"><a href="https://saolghra.github.io/blog" class="nav__link">Blog</a></li>
+                      <li class="nav__item"><a href="https://saolghra.github.io/photography/" class="nav__link active">Gallery</a></li>
+                  </ul>
+              </div>
+
+              <div class="nav__toggle" id="nav-toggle">
+                  <i class='bx bx-menu'></i>
+              </div>
+          </nav>
+          <div class="dropdown">
+            <li class="dropbtn" onclick="myFunction()">Gallery Pages
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="./index">Day to Day life</a>
+              <a href="./selfies">Selfies</a>
+              <a href="./animals">Animals</a>
+            </div>
+      </header>
+<br><br>
+  <main class="grid">
+    <li><img src="img/animals/img5.jpg" />Doggy Chillin 1</li>
+    <li><img src="img/animals/img6.jpg" />Doggy chillin 2</li>
+  </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+          <p class="footer__title">Social Media</p>
+          <div class="footer__social">
+              <a href="https://Linkedin.com/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+              <a href="https://instagram.com/Saolyah" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+              <a href="https://youtube.com/channel/UCB08sMsshzAPcY7aVr3ww3g" class="footer__icon"><i class='bx bxl-youtube' ></i></a>
+          </div>
+          <p>&#169; 2022 copyright all right reserved</p>
+      </footer> 
+
+      <!--========Dropdown Menu Javascript========-->      
+
+      <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+    
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="./script/js/main.js    "></script>
+
+         <!---==== PARTICLES JS=====-->
+         <div id="particles-js"></div>
+         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+         <script>
+             particlesJS.load('particles-js', 'particles.json',
+             function(){
+                 console.log('particles.json loaded...')
+             })
+         </script>   
+         <script type="text/javascript" src="./script/js/app.js"></script>
+         <script type="text/javascript" src="./script/js/particles.js"></script>
+</body>
+</html>
