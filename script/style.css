@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+/*===== Colours =====*/
+:root{
+  --first-color: #4070F4;
+  --second-color: #ffffff;
+}
+
 /*===== BASE =====*/
 *,::before,::after{
   box-sizing: border-box;
@@ -124,6 +130,56 @@ main.grid img {
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+/*Active menu*/
+.active::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+
+/*=== Show menu ===*/
+.show{
+  right: 0;
+}
+
+/*BUTTONS*/
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+}
+.button:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
+
+/* ===== FOOTER =====*/
+.footer{
+  background-color: #0E2431;
+  color: #ffffff;
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 2rem 0;
+}
+.footer__title{
+  font-size: 2rem;
+  margin-bottom: var(--mb-4);
+}
+.footer__social{
+  margin-bottom: var(--mb-4);
+}
+.footer__icon{
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 var(--mb-2)
 }
 
 /* ===== MEDIA QUERIES=====*/
